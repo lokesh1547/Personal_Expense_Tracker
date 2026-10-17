@@ -1,0 +1,187 @@
+/* DashboardPage.css */
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.welcome-message {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.hello-user {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.logout-btn,
+.view-insights-btn,
+.email-summary-btn,
+.add-expense-btn,
+.scan-bill-btn,
+.clear-filters-btn,
+.edit-expense-btn,
+.delete-expense-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    margin: 0.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.logout-btn:hover,
+.view-insights-btn:hover,
+.email-summary-btn:hover,
+.add-expense-btn:hover,
+.scan-bill-btn:hover,
+.clear-filters-btn:hover,
+.edit-expense-btn:hover,
+.delete-expense-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+.add-expense-btn {
+    background-color: #2ecc71;
+}
+
+.add-expense-btn:hover {
+    background-color: #27ae60;
+}
+
+.scan-bill-btn {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+
+.scan-bill-btn:hover {
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+}
+
+.email-summary-btn {
+    background-color: #4a5568;
+}
+
+.email-summary-btn:hover {
+    background-color: #2d3748;
+}
+
+.main-actions-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.summary-alert-banner {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary-alert-banner.success {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+}
+
+.summary-alert-banner.error {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+}
+
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.filter-controls label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.expense-list {
+    list-style: none;
+    padding: 0;
+}
+
+.expense-list li {
+    background-color: #f4f4f4;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.list-btn {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.edit-expense-btn {
+    background-color: #f1c40f;
+}
+
+.edit-expense-btn:hover {
+    background-color: #d4ac0d;
+}
+
+.delete-expense-btn {
+    background-color: #e74c3c;
+}
+
+.delete-expense-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .btn-container,
+    .filter-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expense-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-btn {
+        margin-top: 0.5rem;
+    }
+}
